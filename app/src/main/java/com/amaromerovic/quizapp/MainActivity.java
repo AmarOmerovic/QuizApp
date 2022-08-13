@@ -1,4 +1,4 @@
-package com.amaromerovic.neverhaveiever;
+package com.amaromerovic.quizapp;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 
-import com.amaromerovic.neverhaveiever.databinding.ActivityMainBinding;
-import com.amaromerovic.neverhaveiever.model.Question;
+import com.amaromerovic.quizapp.databinding.ActivityMainBinding;
+import com.amaromerovic.quizapp.model.Question;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -87,29 +87,9 @@ public class MainActivity extends AppCompatActivity {
             updateQuestion();
         });
 
-        mainBinding.trueButton.setOnClickListener(view -> {
-            int text = R.string.incorrectAnswer;
-            int color = ContextCompat.getColor(MainActivity.this, R.color.myRedColor);
+        mainBinding.trueButton.setOnClickListener(view -> processResult(true));
 
-            if (questions[questionIndex].getAnswer()){
-                text = R.string.correctAnswer;
-                color = ContextCompat.getColor(MainActivity.this, R.color.myGreenColor);
-            }
-
-            processResult(text, color);
-        });
-
-        mainBinding.falseButton.setOnClickListener(view -> {
-            int text = R.string.correctAnswer;
-            int color = ContextCompat.getColor(MainActivity.this, R.color.myGreenColor);
-
-            if (questions[questionIndex].getAnswer()){
-                text = R.string.incorrectAnswer;
-                color = ContextCompat.getColor(MainActivity.this, R.color.myRedColor);
-            }
-
-            processResult(text, color);
-        });
+        mainBinding.falseButton.setOnClickListener(view -> processResult(false));
 
     }
 
@@ -147,7 +127,15 @@ public class MainActivity extends AppCompatActivity {
         alert.show();
     }
 
-    public void processResult(int text, int color){
+    public void processResult(boolean userOption){
+        int text = R.string.incorrectAnswer;
+        int color = ContextCompat.getColor(MainActivity.this, R.color.myRedColor);
+
+        if (questions[questionIndex].getAnswer() == userOption){
+            text = R.string.correctAnswer;
+            color = ContextCompat.getColor(MainActivity.this, R.color.myGreenColor);
+        }
+
         if (snackbar != null)
         snackbar.dismiss();
         snackbar = Snackbar.make(this.mainBinding.getRoot(), text, Snackbar.LENGTH_SHORT).setBackgroundTint(color);

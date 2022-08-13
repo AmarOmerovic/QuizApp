@@ -1,4 +1,4 @@
-package com.amaromerovic.neverhaveiever;
+package com.amaromerovic.quizapp;
 
 import org.junit.Test;
 

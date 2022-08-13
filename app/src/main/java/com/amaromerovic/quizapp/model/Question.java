@@ -1,4 +1,4 @@
-package com.amaromerovic.neverhaveiever.model;
+package com.amaromerovic.quizapp.model;
 
 public class Question {
     private int questionNumber;

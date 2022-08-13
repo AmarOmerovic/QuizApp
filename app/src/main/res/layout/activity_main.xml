@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/oopsLogoText"
+            android:cropToPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kisspng_pub_quiz_collaborative_learning_general_knowledge_5af2fb524e35b5_4656996915258734903204" />
+
+        <Button
+            android:id="@+id/falseButton"
+            style="@style/answerButtons"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FF0000"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="@string/iHaveNotButtonText"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/trueButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.654"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/trueButton"
+            style="@style/answerButtons"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#92D050"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="@string/iHaveButtonText"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/falseButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.654"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/nextButton"
+            style="@style/navigationButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#27C7E7"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="@string/nextButtonText"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/previousButton"
+            app:layout_constraintTop_toBottomOf="@+id/trueButton"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/previousButton"
+            style="@style/navigationButtons2"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#27C7E7"
+            android:text="@string/previousButtonText"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/nextButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/falseButton"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/appMakerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="bottom|center|end"
+            android:hint="@string/appMaker"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.982" />
+
+        <TextView
+            android:id="@+id/questionTextView"
+            style="@style/textStyle"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxHeight="200dp"
+            android:textAlignment="center"
+            android:textColor="#2D282A"
+            android:textSize="43sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/questionNumberView"
+            style="@style/questionPrepStyle"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="#2D282A"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/questionTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
+

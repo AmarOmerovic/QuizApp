@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="iHaveButtonText">True</string>
+    <string name="iHaveNotButtonText">False</string>
+    <string name="previousButtonText">Previous</string>
+    <string name="nextButtonText">Next</string>
+    <string name="appMaker">Quiz Application\nby Amar Omerović</string>
+    <string name="oopsLogoText">oopsLogo</string>
+    <string name="neverHaveIEverProptText">Question: </string>
+    <string name="exit">Exit</string>
+    <string name="play">Play</string>
+    <string name="psstemoji">psstEmoji</string>
+    <string name="never_have_i_ever">Never Have I Ever …</string>
+
+    <string name="question1">Do camels have three sets of eyelids?</string>
+    <string name="question2">It is possible to sneeze while sleeping.</string>
+    <string name="question3">Australia is a country as well as a continent.</string>
+    <string name="question4">Herbivore animals consume meat.</string>
+    <string name="question5">The cell nucleus was discovered by Robert Brown.</string>
+    <string name="question6">The national flag of America has 51 stars.</string>
+    <string name="question7">Pneumonia is an infection that affects lungs.</string>
+    <string name="question8">The capital of Spain is Madrid.</string>
+    <string name="question9">Ears are responsible for smelling.</string>
+    <string name="question10">The color of cherries is red.</string>
+    <string name="question11">Butterflies are not birds.</string>
+    <string name="question12">The capital of France is Washington DC.</string>
+    <string name="question13">There are four lungs found in the human body.</string>
+    <string name="question14">The human body consists of 150 bones.</string>
+    <string name="question15">Jupiter is the smallest planet in the solar system.</string>
+    <string name="question16">Mt. Everest is the highest mountain in the world.</string>
+    <string name="question17">Seeds of cotton get dispersed by water.</string>
+    <string name="question18">Molecule is the smallest unit of matter.</string>
+    <string name="question19">The Sahara desert is the biggest desert in the world.</string>
+    <string name="question20">A group of monkeys is called a herd.</string>
+    <string name="question21">A century consists of one hundred years.</string>
+    <string name="question22">Chlorophyll is responsible for green color in plants.</string>
+    <string name="question23">Crocodiles shed tears when they eat food.</string>
+    <string name="question24">The US shares borders with three countries.</string>
+    <string name="question25">The tallest building in the world is Burj Khalifa. </string>
+    <string name="question26">French is the official language of Spain.</string>
+    <string name="question27">Evergreen forests are mostly found in hilly regions.</string>
+    <string name="question28">The Nile is not the longest river in the world.</string>
+    <string name="question29">Elephants are the largest animals in the world.</string>
+    <string name="question30">The capital of Australia is Sydney.</string>
+    <string name="question31">Sharks are mammals.</string>
+    <string name="question32">The closest planet to the sun is Venus.</string>
+    <string name="question33">The unit of measurement for temperature is Kelvin.</string>
+    <string name="question34">China is the largest country in the world. </string>
+    <string name="question35">Asia is the largest continent in the world. </string>
+    <string name="question36">There is no railway system in Iceland.</string>
+    <string name="question37">Oxygen is required for breathing.</string>
+    <string name="question38">The human heart is equivalent to the size of a fist.</string>
+    <string name="question39">Eyes are responsible for sight.</string>
+    <string name="question40">There are seven colors in the rainbow.</string>
+    <string name="question41">World War II started in 1945.</string>
+    <string name="question42">The national game of England is Cricket.</string>
+    <string name="question43">Leopard is the fastest animal in the world.</string>
+    <string name="question44">Omnivores eat only plants.</string>
+    <string name="question45">The largest bone in the human body is the thigh bone. </string>
+    <string name="question46">Sloth takes two weeks to digest food.</string>
+    <string name="question47">A group of jellyfish is called a smack.</string>
+    <string name="question48">The horn of rhinoceros is made of hair.</string>
+    <string name="question49">Archimedes is considered to be the father of history.</string>
+    <string name="question50">Taiwan celebrates festivals to appreciate monkeys.</string>
+
+
+    <string name="nextToRetakeButton">Retake</string>
+    <string name="correctAnswer">Good job, answer is correct! ✔</string>
+    <string name="incorrectAnswer">Unfortunately, your answer is incorrect! ✖</string>
+
+</resources>
